@@ -20,6 +20,6 @@ jobs :
           script : |
             cd /home/ubuntu/Seedly_backend
             sudo npm i
-            sudo npm start
+            sudo npm run dev
             pm2 restart Backend || pm2 start index.js --name "Backend"
         
