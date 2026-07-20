@@ -19,7 +19,8 @@ jobs :
 
           script : |
             cd /home/ubuntu/Seedly_backend
-            sudo npm i
-            sudo npm run dev
+            git pull origin main
+            sudo npm install
             pm2 restart Backend || pm2 start index.js --name "Backend"
+            pm2 save
         
